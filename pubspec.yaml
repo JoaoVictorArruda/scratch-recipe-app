@@ -25,6 +25,7 @@ dependencies:
     sdk: flutter
 
   flutter_bloc: ^7.1.0
+  tab_indicator_styler: ^2.0.0
 
 
 dev_dependencies:
@@ -46,6 +47,7 @@ flutter:
   assets:
     - assets/
     - assets/signup/
+    - assets/profile/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

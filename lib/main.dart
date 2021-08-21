@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:scratch_recipe_app/dependencies.dart';
 import 'package:scratch_recipe_app/presentation/splash/splash_page.dart';
+import 'package:scratch_recipe_app/presentation/themes.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Scratch Recipe',
-        // theme: Themes.getTheme(state),
+        theme: Themes.getTheme(),
         home: SplashPage(),
       )
     // )

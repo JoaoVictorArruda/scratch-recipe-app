@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:scratch_recipe_app/navigator_utils.dart';
+import 'package:scratch_recipe_app/presentation/profile/profile_overview_page.dart';
 import 'package:scratch_recipe_app/presentation/themes.dart';
 
 class SignupFormPage extends StatelessWidget {
@@ -43,7 +45,9 @@ class SignupFormPage extends StatelessWidget {
                     Container(
                       height: 60,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          pushToPage(context, ProfileOverviewPage());
+                        },
                         style: ButtonStyle(
                           backgroundColor:  MaterialStateProperty.all<Color>(primaryColor),
                           shape: MaterialStateProperty.all<OutlinedBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12)))),
@@ -57,6 +61,7 @@ class SignupFormPage extends StatelessWidget {
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(primary: Color(0xFF2C66B6)),
                         onPressed: () {
+                          pushToPage(context, ProfileOverviewPage());
                           // context.read<SignInFormCubit>().signInWithFacebook();
                         },
                         child: Container(
