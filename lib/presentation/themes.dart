@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const primaryColor = Color(0xFF30BE76);
+const buttonColor = Color(0xFF4CC789);
 
 class Themes {
 
