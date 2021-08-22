@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:scratch_recipe_app/presentation/profile/widgets/recipe_card_widget.dart';
+import 'package:scratch_recipe_app/presentation/themes.dart';
 
 class ProfileOverviewPage extends StatefulWidget {
   ProfileOverviewPage({Key? key}) : super(key: key);
@@ -15,6 +17,70 @@ class _ProfileOverviewPageState extends State<ProfileOverviewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        bottomNavigationBar: SizedBox(
+          height: MediaQuery.of(context).size.height * 0.12,
+          child:  BottomAppBar(
+            child: Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Expanded(
+                    child: SizedBox(
+                      height: 44,
+                      child: Material(
+                        type: MaterialType.transparency,
+                        child: InkWell(
+                          onTap: () {},
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              SvgPicture.asset('assets/search.svg', width: 24,)
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: SizedBox(
+                      height: 44,
+                      child: Material(
+                        type: MaterialType.transparency,
+                        child: InkWell(
+                          onTap: () {},
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              SvgPicture.asset('assets/screen.svg')
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: SizedBox(
+                      height: 44,
+                      child: Material(
+                        type: MaterialType.transparency,
+                        child: InkWell(
+                          // onTap: _incrementCounter,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              SvgPicture.asset('assets/cook_hat.svg', width: 26,)
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ]),
+          )
+        ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 20),
@@ -28,7 +94,8 @@ class _ProfileOverviewPageState extends State<ProfileOverviewPage> {
                     Text('My Kitchen', style: TextStyle(fontSize: 28, fontWeight: FontWeight.w500),),
                     Row(
                       children: [
-                        Icon(Icons.settings,),
+                        // Icon(Icons.settings,),
+                        SvgPicture.asset('assets/settings.svg'),
                         Padding(
                           padding: const EdgeInsets.only(left: 8.0),
                           child: Text('Settings', style: TextStyle(fontSize: 18),),
@@ -51,7 +118,8 @@ class _ProfileOverviewPageState extends State<ProfileOverviewPage> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text('Nick Evans', style: TextStyle(fontSize: 19),),
-                              Icon(Icons.edit)
+                              SvgPicture.asset('assets/edit.svg', width: 18, color: Colors.black87,),
+                              // Icon(Icons.edit)
                             ],
                           ),
                           SizedBox(height: 8,),

@@ -26,7 +26,7 @@ dependencies:
 
   flutter_bloc: ^7.1.0
   tab_indicator_styler: ^2.0.0
-
+  flutter_svg: ^0.22.0
 
 dev_dependencies:
   flutter_test:
