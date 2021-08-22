@@ -1,0 +1,103 @@
+{
+  "data": {
+    "recipe": [
+      {
+        "name": "Cheese-Burguer with Potato Fries",
+        "category": "Western",
+        "image": "assets/recipe/recipe_1.jpg",
+        "time": 15,
+        "ingredients": [
+          {
+            "name": "Hamburguer"
+          },
+          {
+            "name": "Cheese"
+          },
+          {
+            "name": "Potato"
+          },
+          {
+            "name": "Bread"
+          }
+        ]
+      },
+      {
+        "name": "Red Forest Cake",
+        "category": "Western",
+        "image": "assets/recipe/recipe_2.jpg",
+        "time": 120,
+        "ingredients": [
+          {
+            "name": "Wheat"
+          },
+          {
+            "name": "Strawberry"
+          },
+          {
+            "name": "Eggs"
+          },
+          {
+            "name": "Milk"
+          }
+        ]
+      },
+      {
+        "name": "Pasta and Herbs",
+        "category": "Western",
+        "image": "assets/recipe/recipe_3.jpg",
+        "time": 120,
+        "ingredients": [
+          {
+            "name": "Eggs"
+          },
+          {
+            "name": "Wheat"
+          },
+          {
+            "name": "Herbs"
+          }
+        ]
+      },
+      {
+        "name": "Strawberry Pie",
+        "category": "Western",
+        "image": "assets/recipe/recipe_4.jpg",
+        "time": 45,
+        "ingredients": [
+          {
+            "name": "Eggs"
+          },
+          {
+            "name": "Wheat"
+          },
+          {
+            "name": "Strawberry"
+          },
+          {
+            "name": "Milk"
+          }
+        ]
+      },
+      {
+        "name": "Pancake",
+        "category": "Western",
+        "image": "assets/recipe/recipe_4.jpg",
+        "time": 25,
+        "ingredients": [
+          {
+            "name": "Sugar"
+          },
+          {
+            "name": "Wheat"
+          },
+          {
+            "name": "Strawberry"
+          },
+          {
+            "name": "Milk"
+          }
+        ]
+      }
+    ]
+  }
+}
