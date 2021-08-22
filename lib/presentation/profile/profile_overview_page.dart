@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:scratch_recipe_app/navigator_utils.dart';
 import 'package:scratch_recipe_app/presentation/profile/widgets/recipe_card_widget.dart';
-import 'package:scratch_recipe_app/presentation/recipe/recipe_overview_page.dart';
+import 'package:scratch_recipe_app/presentation/recipe/recipe_overview/recipe_overview_page.dart';
 
 class ProfileOverviewPage extends StatefulWidget {
   ProfileOverviewPage({Key? key}) : super(key: key);
