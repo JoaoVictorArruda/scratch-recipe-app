@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:scratch_recipe_app/navigator_utils.dart';
 import 'package:scratch_recipe_app/presentation/profile/widgets/recipe_card_widget.dart';
-import 'package:scratch_recipe_app/presentation/themes.dart';
+import 'package:scratch_recipe_app/presentation/recipe/recipe_overview_page.dart';
 
 class ProfileOverviewPage extends StatefulWidget {
   ProfileOverviewPage({Key? key}) : super(key: key);
@@ -47,8 +48,10 @@ class _ProfileOverviewPageState extends State<ProfileOverviewPage> {
                       height: 44,
                       child: Material(
                         type: MaterialType.transparency,
-                        child: InkWell(
-                          onTap: () {},
+                        child: GestureDetector(
+                          onTap: () {
+                            pushToPage(context, RecipeOverviewPage());
+                          },
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.center,
