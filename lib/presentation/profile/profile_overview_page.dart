@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:scratch_recipe_app/application/profile/profile_overview_cubit.dart';
 import 'package:scratch_recipe_app/domain/profile/i_profile_repository.dart';
+import 'package:scratch_recipe_app/domain/profile/profile.dart';
 import 'package:scratch_recipe_app/navigator_utils.dart';
 import 'package:scratch_recipe_app/presentation/profile/widgets/recipe_card_widget.dart';
 import 'package:scratch_recipe_app/presentation/recipe/recipe_overview/recipe_overview_page.dart';
@@ -125,7 +126,28 @@ class _ProfileOverviewPageState extends State<ProfileOverviewPage> {
                       ),
                       Row(
                         children: [
-                          Image.asset(state.profile.image, width: MediaQuery.of(context).size.width * 0.22,),
+                          if(Profile.isFacebook) Container(
+                              width: MediaQuery.of(context).size.width * 0.22,
+                              height: MediaQuery.of(context).size.width * 0.22,
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  image: DecorationImage(
+                                      fit: BoxFit.fill,
+                                      image: NetworkImage(
+                                          state.profile.image)
+                                  )
+                              )),
+                          if(!Profile.isFacebook) Container(
+                              width: MediaQuery.of(context).size.width * 0.22,
+                              height: MediaQuery.of(context).size.width * 0.22,
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  image: DecorationImage(
+                                      fit: BoxFit.fill,
+                                      image: AssetImage(
+                                          state.profile.image)
+                                  )
+                              )),
                           Expanded(
                             child: Padding(
                               padding: const EdgeInsets.only(left: 15.0),

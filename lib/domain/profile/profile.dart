@@ -9,13 +9,17 @@ class Profile {
   final String saved;
   final List<Recipe> recipes;
 
+  static bool isFacebook = false;
+  static String nameFacebook = '';
+  static String imageFacebook = '';
+
   Profile({required this.name, required this.description, required this.image, required this.followers, required this.likes, required this.following, required this.saved, required this.recipes});
 
   factory Profile.fromJson(Map<String, dynamic> jsonData) {
     return Profile(
-      name: jsonData['name'],
+      name: isFacebook ? nameFacebook : jsonData['name'],
       description: jsonData['description'],
-      image: jsonData['image'],
+      image: isFacebook ? imageFacebook : jsonData['image'],
       followers: jsonData['followers'],
       likes: jsonData['likes'],
       following: jsonData['following'],
