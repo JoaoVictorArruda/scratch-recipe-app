@@ -405,7 +405,7 @@ class RecipeFormPage extends StatelessWidget {
                                               },
                                             ),
                                           ),
-                                          child: Text('Save Recipe', style: TextStyle(color: buttonColor, fontSize: 19),)
+                                          child: Text('Save Recipe', style: TextStyle(color: buttonColor, fontSize: 17),)
                                       ),
                                     ),
                                   )
