@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:scratch_recipe_app/domain/profile/profile.dart';
 
 class RecipeCardWidget extends StatelessWidget {
-  const RecipeCardWidget({Key? key, required this.asset}) : super(key: key);
+  const RecipeCardWidget({Key? key, required this.recipe}) : super(key: key);
 
-  final String asset;
+  final Recipe recipe;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class RecipeCardWidget extends StatelessWidget {
             height: 120,
             width: MediaQuery.of(context).size.width * 0.42,
             child: Image.asset(
-              asset,
+              recipe.image,
               fit: BoxFit.cover,
             ),
           ),
@@ -31,7 +32,7 @@ class RecipeCardWidget extends StatelessWidget {
                 Align(
                   alignment: Alignment.topLeft,
                   child: Text(
-                      'Sweets',
+                      recipe.name,
                       style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
                       textAlign: TextAlign.start,
                       maxLines: 2,

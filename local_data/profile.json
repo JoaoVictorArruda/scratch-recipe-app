@@ -1,0 +1,48 @@
+{
+  "data": {
+    "profile": {
+        "name": "Nick Evans",
+        "description": "Potato Master",
+        "image": "assets/profile/profile_logo.png",
+        "followers": "584",
+        "likes": "23k",
+        "following": "248",
+        "saved": "75",
+        "recipes": [
+          {
+            "image": "assets/profile/food_1.jpg",
+            "name": "Sweets"
+          },
+          {
+            "image": "assets/profile/food_2.jpg",
+            "name": "Italian"
+          },
+          {
+            "image": "assets/profile/food_3.jpg",
+            "name": "Desserts"
+          },
+          {
+            "image": "assets/profile/food_4.jpg",
+            "name": "Chocolates"
+          },
+          {
+            "image": "assets/profile/food_5.jpg",
+            "name": "Eggs"
+          },
+          {
+            "image": "assets/profile/food_6.jpg",
+            "name": "Pasta"
+          },
+          {
+            "image": "assets/profile/food_7.jpg",
+            "name": "Pizza"
+          },
+          {
+            "image": "assets/profile/food_8.jpg",
+            "name": "Meat"
+          }
+        ]
+      }
+
+  }
+}
