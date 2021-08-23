@@ -20,6 +20,7 @@ class SignupFormCubit extends Cubit<SignupFormState> {
 
   String login(String email, String password) {
     if(email == 'admin@scratch.com' && password == 'admin') {
+      Profile.isFacebook = false;
       return "";
     }
     return "Invalid credentials";

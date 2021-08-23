@@ -95,7 +95,7 @@ class SignupFormPage extends StatelessWidget {
                                     SizedBox(width: 20,),
                                     FittedBox(
                                         fit: BoxFit.fitWidth,
-                                        child: AutoSizeText('Continue with Facebook', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26),)
+                                        child: AutoSizeText('Continue with Facebook', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),)
                                     )
                                   ],
                                 ),
